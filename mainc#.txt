@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ForeachCalculation
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CalculateWithForeach();
+            Console.ReadLine();
+        }
+
+        private static void CalculateWithForeach()
+        {
+            int[] numbers = { 5, 9, 15, 17 };
+
+            // Print (number-1) * 3 for each element
+            foreach (var item in numbers)
+            {
+                Console.WriteLine((item - 1) * 3);
+            }
+        }
+    }
+
+}
